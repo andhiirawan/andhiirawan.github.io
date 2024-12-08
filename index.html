@@ -1,67 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andhi Irawan | Freelance Web Developer</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andhi Irawan | Portfolio</title>
+    <link rel="icon" type="image" href="./assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <h1>Hello, I'm <span>Andhi Irawan</span> 👋</h1>
-      <p>A freelance web developer specializing in modern, responsive designs.</p>
-      <a href="#portfolio" class="cta">View My Work</a>
+    <div id="loading">
+        <div id="spinner"></div>
     </div>
-  </header>
-
-  <main>
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>I’m a passionate web developer with expertise in creating stunning websites and web applications that solve real-world problems.</p>
-        <ul>
-          <li>🌐 Frontend: HTML, CSS, JavaScript, React</li>
-          <li>⚙️ Backend: Node.js, Express, MongoDB</li>
-          <li>🛠️ Tools: Git, VS Code, Figma</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <h2>My Portfolio</h2>
-        <div class="projects">
-          <div class="project">
-            <img src="assets/images/project1.jpg" alt="Project 1">
-            <h3>Project 1</h3>
-            <p>A short description of this project.</p>
-            <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
-          </div>
-          <div class="project">
-            <img src="assets/images/project2.jpg" alt="Project 2">
-            <h3>Project 2</h3>
-            <p>A short description of this project.</p>
-            <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
-          </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay: 1700ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1900ms;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay: 1900ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1800ms;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
+    </div>
+    <!-- <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay: 1000ms;">about</a> -->
+    <a id="about" href="#" class="animated fadeIn" style="animation-delay: 1000ms;">about</a>
+    <!-- <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay: 1000ms;">work</a> -->
+    <a id="work" href="#" class="animated fadeIn" style="animation-delay: 1000ms;">work</a>
+    <!-- <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay: 1000ms;">contact</a> -->
+    <a id="contact" href="#" class="animated fadeIn" style="animation-delay: 1000ms;">contact</a>
+    <!-- <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">projects</a> -->
+    <a id="projects" href="#" class="animated fadeIn" style="animation-delay: 1000ms;">projects</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
+        <h1>Andhi Irawan</h1>
+        <h2>Freelance Web Developer</h2>
+        <div id="menu">
+            <a onclick="showabout()">about</a>
+            <a onclick="showwork()">work</a>
+            <a onclick="showcontact()">contact</a>
+            <a onclick="showprojects()">projects</a>
         </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out if you'd like to work together!</p>
-        <a href="mailto:andhiirawan@gmail.com" class="cta">Get in Touch</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Andhi Irawan. All rights reserved.</p>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.linkedin.com/in/andhi-irawan/"><i class="fab fa-linkedin"></i></a></td>
+                <!-- <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://twitter.com/Being_Goswami"><i class="fab fa-twitter"></i></a></td> -->
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://x.com/andhirawan" class="social" aria-label="Visit My X">
+                    <svg width="auto" height="22" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 271">
+                        <path d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z" fill="white"/>
+                    </svg>
+                </a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.instagram.com/andhiirawan.portfolio"><i class="fab fa-instagram"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://andhiirawan.my.id/"><i class="fas fa-globe"></i></a></td>
+            </tr>
+        </table>
     </div>
-  </footer>
+    <div id="projects_container" class="container">
+        <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
+        <h1>projects.</h1>
+        <section>
+            <h2>my work</h2>
+            <p>
+                Here are some of the projects I've worked on recently. Feel free to explore:
+            </p>
+            <ul>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Portfolio</h3>
+                        <p>The Open-Source code for the Personal Portfolio this website is coming from! A minimal and
+                            ambient portfolio template for Developers! ⚡</p>
+                        <button class="btn_one"><a
+                                href="https://github.com/TheKaushikGoswami/thekaushikgoswami.github.io"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Olympus</h3>
+                        <p>An Application commands-based multi-purpose discord bot that can do most of the things that
+                            you require for your discord server.</p>
+                        <button class="btn_one"><a href="https://github.com/TheKaushikGoswami/Olympus"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>Modmail Bot</h3>
+                        <p>A simple and efficient discord modmail bot written in Python language, using library named
+                            discord.py without any databse integration.</p>
+                        <button class="btn_one"><a href="https://github.com/TheKaushikGoswami/lyq-hangout-modmail"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_info">
+                        <h3>100 Days, 100 Programs</h3>
+                        <p>An exhilarating journey of 100 Days, 100 Programs challenge, where I explore various programming languages and frameworks to build a diverse collection of practical applications. 🚀</p>
+                        <button class="btn_one"><a href="https://github.com/TheKaushikGoswami/100-Days-100-Programs"
+                                style="color: inherit; text-decoration: none"> View Project </a></button>
+                    </div>
+                </div>
+            </ul>
+        </section>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>work.</h1>
+        <section>
+            <h2></h2>
+            <p>
+                Welcome! I'm Kaushik Goswami, a passionate professional specializing in Web Designing, Python
+                Programming, Graphic Designing, and Content Writing. With 2 years of personal experience, I bring fresh
+                and innovative solutions to every project. From visually appealing websites to efficient Python programs
+                and captivating graphics, I deliver high-quality work that exceeds expectations. Let's collaborate and
+                create remarkable digital experiences. Explore my LinkedIn page for samples and connect to discuss your
+                project.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Web Designing</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Content Writing</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Graphic Designing</div>
+            </div>
+            <button class="btn_one"><a href="./assets/Resume.pdf" target="_blank"
+                    style="color: inherit; text-decoration: none">View
+                    Resume</a></button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>about.</h1>
+        <section>
+            <h2>about me</h2>
+            <p>
+                Hello there! I'm Kaushik Goswami, a professional self-taught developer based in Indonesia. With a strong
+                passion for web development and a keen eye for creative solutions, I specialize in transforming ideas
+                into fully functional digital solutions. My goal is to deliver exceptional results that surpass client
+                expectations.
+            </p>
+            <p>
+                Alongside my web development expertise, I also possess a strong flair for Graphic Designing. From
+                captivating Vector Art to eye-catching Banners, Logos, and Planners, I merge technical proficiency with
+                artistic vision to create visually stunning designs. I strive to strike the perfect balance between
+                aesthetics and functionality, ensuring that each project leaves a lasting impression.
+            </p>
+            <p>
+                Feel free to explore my portfolio on my website, where you can witness the diverse range of projects
+                I've had the privilege to work on. Let's collaborate to bring your ideas to life with remarkable digital
+                experiences that truly stand out.
+            </p>
+
+        </section>
+        <section>
+            <h2>skills</h2>
+            <p>
+                html, css, javascript, markdown, python, mysql, canva, photoshop, filmora, raspberrypi, arduino
+            </p>
+        </section>
+    </div>
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>contact.</h1>
+        <section>
+            <h2>contact me</h2>
+            <p>
+            <form action="https://formcarry.com/s/JKNu0aGkeQ" method="POST" class="formcarry-form">
+                <input name="name" type="text" placeholder="name" required />
+                <input name="email" type="email" placeholder="email" required /><br>
+                <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
+                <button class="btn_one">send</button>
+            </form>
+            </p>
+        </section>
+    </div>
+    <div id="footer">
+        Made with ❤️ in Indonesia <br> <a href="https://andhiirawan.github.io">andhiirawan</a>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
