@@ -6,7 +6,7 @@
 
 ## Website Preview
 <a href="https://andhiirawan.github.io" target="_blank">
-    <img src="./assets/workspace.png" align="center" alt="Website Preview">
+    <img src="./assets/preview.png" align="center" alt="Website Preview">
 </a><br><br>
 
 To view a live example, **[click here](https://andhiirawan.github.io/)**
